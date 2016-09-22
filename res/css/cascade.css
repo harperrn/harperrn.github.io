@@ -150,7 +150,7 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: white;
-    background: url("/res/img/head.jpg") no-repeat bottom center scroll;
+    background: url("./res/img/head.jpg") no-repeat bottom center scroll;
     background-color: #2B303A;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -358,7 +358,7 @@ body {
     padding-left: 20px;
     padding-right: 20px;
     background: url("/res/img/");
-    background-color: #0c7c59;
+    background-color: #175676;
     
 }
 
