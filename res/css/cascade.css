@@ -150,7 +150,7 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: white;
-    background: url("./res/img/head.jpg") no-repeat bottom center scroll;
+    background: url("/res/img/head5.jpg") no-repeat bottom center scroll;
     background-color: #2B303A;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -406,4 +406,28 @@ body {
 button#submit {
     padding-left: 5px;
     padding-left: 5px;
+}
+
+.icon-right {
+    position: right;
+    text-align: right;
+    padding-left: 70%;
+
+}
+
+.section-head {
+    font-size: 60px;
+    font-weight: 400;
+    padding-left: 50px;
+    
+}
+.section-text {
+
+}
+.blue-left {
+    width: .5%;
+    border-width: 50px;
+    border-color: #175676;
+    padding: 0px;
+    position: left;
 }
