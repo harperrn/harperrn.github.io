@@ -237,6 +237,41 @@ if (!$errName && !$errComp && !$errEmail && !$errMessage && !$errHuman) {
             </div>
         </div>
     </section>
+    
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="row">
+                <h1 class="title">Portfolio</h1>
+
+                <p class="subheader">Below is a showcase of our work. We are adding more frequently. </p>
+                <hr class="seperator">
+                          <div class="center-wrapper">
+<img type="button" height="100em" width="180em" src="res/img/assessment-logo.png" class="btn modal-btn" data-toggle="modal" data-target="#assessmentinspections">
+                </div>
+        
+<!-- Modal -->
+<div class="modal fade modal-portfolio" id="assessmentinspections" tabindex="-1" role="dialog" aria-labelledby="Assessment Inspections">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="fa fa-chevron-down color-light" aria-hidden="true"></span></button>
+          <br>
+          <h1 class="title-modal color-light" id="myModalLabel">Assessment Inspections</h1>
+          <p class="subheader med-size color-light">Hardwood flooring inspection informational website.</p>
+          <hr class="seperator">
+          <form action="http://assessmentinspections.org" target="_blank">
+            <input type="submit" class="btn btn-lg btn-light btn-center" value="View site" />
+          </form>
+          <br>
+          <p class="paragraph color-light">Assessment Inspections is a Bootstrap-based informational one page site outlining what the company does and prices listed. Project focused on overall asthetics and page design. Some aspects are redundant for customer ease of use. Working PHP contact form at the bottom of the page to contact the owner directly. </p>
+          <br>
+          <button type="button" class="btn btn-light btn-center" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
+    </section>
     <section id="contact" class="contact">
         <div class="container">
             <div class="row">
@@ -301,6 +336,34 @@ if (!$errName && !$errComp && !$errEmail && !$errMessage && !$errHuman) {
             <p> &copy; 2017 Cascade Design LLC. </p>
         </div>
     </footer>
+    
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <h1 class="title color-dark" >Assessment Inspections</h1>
+                                <p class="subheader color-dark med">Hardwood flooring inspection informational website.</p>
+                                <hr class="seperator">
+                                <p class="paragraph color-dark med">Bootstrap-based informational one page site outlining what the company does and prices listed. Project focused on asthetics and page design. Some aspects are redundant for customer ease of use. Working PHP contact form at the bottom of the page to contact the owner directly. </p>
+                                <hr class="seperator">
+                                <p class="subheader color-dark">Project completed in: 1 Month</p>
+                                <button type="button" class="btn btn-dark" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.js"></script>
     <!-- Bootstrap Core JavaScript -->
