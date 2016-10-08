@@ -16,7 +16,7 @@
     <!-- CSS -->
     <link href="res/css/cascade.css" rel="stylesheet">
     <!-- Animate.css -->
-    <link href="/res/css/animate.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -147,17 +147,18 @@ if (!$errName && !$errComp && !$errEmail && !$errMessage && !$errHuman) {
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse"> Menu <i class="fa fa-bars"></i> </button>
-                <a class="navbar-brand page-scroll" href="#page-top"> <span class="light">Cascade</span> Design </a>
+                <a class="navbar-brand page-scroll animated fadeIn" href="#page-top"> <span class="light">Cascade</span> Design </a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse animated fadeIn">
                 <ul class="nav navbar-nav">
                     <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
                     <li> <a class="page-scroll" href="#about">About</a> </li>
-                    <li> <a class="page-scroll" href="#philo">Philosophy</a> </li>
+                    <li> <a class="page-scroll" href="#team">Meet the Designer</a> </li>
+                    <li> <a class="page-scroll" href="#portfolio"> Portfolio</a> </li>
                     <li> <a class="page-scroll" href="#contact">Contact</a> </li>
                 </ul>
             </div>
@@ -166,15 +167,15 @@ if (!$errName && !$errComp && !$errEmail && !$errMessage && !$errHuman) {
         <!-- /.container -->
     </nav>
     <!-- Intro Header -->
-    <header class="intro">
+    <header class="intro animated fadeIn">
         <div class="intro-body">
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading">Cascade Design</h1> <img src="/res/img/cascade-logo.png" height="45%" width="45%" />
+                        <h1 class="brand-heading animated fadeIn">Cascade Design</h1> <img class="animated fadeIn" src="/res/img/cascade-logo.png" height="45%" width="45%" />
                         <br>
                         <br>
-                        <p class="intro-text">Clean and Simple Web and Graphic Design</p>
+                        <p class="intro-text animated fadeIn">Clean and Simple Web and Graphic Design</p>
                     </div>
                 </div>
             </div>
@@ -183,35 +184,39 @@ if (!$errName && !$errComp && !$errEmail && !$errMessage && !$errHuman) {
     <section id="about" class="about">
         <div class="container">
             <div class="col-md-12 col-lg-12 col-sm--12">
-                <h1 class="title">The Minimalistic Design Process</h1>
+                
+                      <h1 class="title">Why choose Cascade Design</h1>
+                <hr class="seperator">
+                <p class="paragraph">Our lead designer has years of experience working with the minimal design process and communicating withj clients to achieve exactly the desired effect. Grow your customer base with a well designed and thought out site which is easy to navigate and is full of appealing design asthetic. Your desired photos can be taken by our designer and implimented into the design of the site wherever required. Color schemes and combinations are chosen based off company colors and logo design. </p>
+                    <br>
+                    <br>
+                <h1 class="title">Minimalistic Design Process</h1>
                 <hr class="seperator">
                 
                 <ul class="list-unstyled">
                     <li>
                         <p class="subheader">- Plan -</p>
+                        <p class="paragraph">Planning consists of talking to you, the consumer, about your wants and needs. An assessment will be made on the required elements and a wireframe or a designer's schematic will be built. Based off this, the overall layout of the site can be visualized and adjustments can be made before building takes place. </p>
                     </li>
                     <li>
                         <p class="subheader">- Design -</p>
+                        <p class="paragraph">Based off the wireframe, images, text, and other crucial elements are put in place and can be viewed in a traditional web browser such as Chrome or Firefox. During this time, a color scheme is chosen from a company average palette and implimented into the webpage. </p>
                     </li>
                     <li>
-                        <p class="subheader">- Critique and Evaluate -</p>
+                        <p class="subheader">- Evaluate -</p>
+                        <p class="paragraph">While the initial building process is coming to a hault, a meeting is set up between the designer and the customer to discuss what elements need to be changed. A primary stage of revision is conducted and another customer assessment is organized.</p>
                     </li>
                     <li>
-                        <p class="subheader">- Revise Changes -</p>
+                        <p class="subheader">- Revise -</p>
+                        <p class="paragraph">A primary stage of revision is conducted and another customer assessment is organized. With this, the semi-final version is shown. Another set of more minor revisions may happen succeeding this process until a satisfactory final draft is ready to be pushed to the hosting server. </p>
                     </li>
                 </ul>
                 <p class="paragraph"> Our minimalistic design process consists of four steps: plan, design, critique, and revise changes. This process allows for the most efficient workflow. This process can be completed by one designer and allows for the overall cost of building the site to be cut by at least 40%. Errors and revisions required to be adjusted are resolved quickly and efficinetly by one designer. </p>
                 
                 <br>
-                <br> 
                 <br>
-                
-                <h1 class="title">Why choose Cascade Design</h1>
-                <p class="paragraph">Our lead designer has years of experience working with the minimal design process and communicating withj clients to achieve exactly the desired effect. Grow your customer base with a well designed and thought out site which is easy to navigate and is full of appealing design asthetic. Your desired photos can be taken by our designer and implimented into the design of the site wherever required. Color schemes and combinations are chosen based off company colors and logo design. </p>
-                
-                
+          
             </div>
-                
             </div>
         </div>
     </section>
@@ -219,18 +224,18 @@ if (!$errName && !$errComp && !$errEmail && !$errMessage && !$errHuman) {
         <div class="container">
             <div class="row">
                 <div class="col-sm-10 col-lg-12 col-md-12 text-center contact-form">
-                    <h1 class="title">Contact Us</h1>
+                    <h1 class="title color-dark">Contact Us</h1>
                     <form class="form-horizontal" role="form" method="post" action="index.php">
 
                         <div class="form-group pagination-centered">
-                            <label for="name" class="col-sm-2 col-md-12 col-lg-12 control-label-top">Name</label>
+                            <label for="name" class="col-sm-2 col-md-12 col-lg-12 control-label-top color-dark">Name</label>
                             <div class="col-sm-10 col-md-8 col-md-offset-2">
                                 <input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" value="<?php echo htmlspecialchars($_POST['name']); ?>">
                              <!--   <?php echo "<p class='text-danger'>$errName</p>";?> -->
                             </div>
                         </div>
                         <div class="form-group pagination-centered">
-                            <label for="email" class="col-sm-2 col-md-12 col-lg-12 control-label-top">Email</label>
+                            <label for="email" class="col-sm-2 col-md-12 col-lg-12 control-label-top color-dark">Email</label>
                             <div class="col-sm-10 col-md-8 col-md-offset-2">
                                 <input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="<?php echo htmlspecialchars($_POST['email']); ?>">
                              <!--   <?php echo "<p class='text-danger'>$errEmail</p>";?> -->
@@ -238,7 +243,7 @@ if (!$errName && !$errComp && !$errEmail && !$errMessage && !$errHuman) {
                         </div>
                         
                         <div class="form-group">
-                            <label for="message" class="col-sm-2 col-md-12 col-lg-12 control-label-top">Message</label>
+                            <label for="message" class="col-sm-2 col-md-12 col-lg-12 control-label-top color-dark">Message</label>
                             <div class="col-sm-10 col-md-6 col-md-offset-3">
                                 <textarea class="form-control" rows="4" name="message">
                                  <!--   <?php echo htmlspecialchars($_POST['message']);?> -->
@@ -247,7 +252,7 @@ if (!$errName && !$errComp && !$errEmail && !$errMessage && !$errHuman) {
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="human" class="col-sm-2 col-md-12 control-label-top">2 + 3 = ?</label>
+                            <label for="human" class="col-sm-2 col-md-12 control-label-top color-dark">2 + 3 = ?</label>
                             <div class="col-sm-10 col-md-4 col-md-offset-4">
                                 <input type="text" class="form-control" id="human" name="human" placeholder="Your Answer">
                              <!--   <?php echo "<p class='text-danger'>$errHuman</p>";?> -->
@@ -255,7 +260,7 @@ if (!$errName && !$errComp && !$errEmail && !$errMessage && !$errHuman) {
                         </div>
                         <div class="form-group">
                             <div class="col-sm-10 col-sm-offset-1">
-                                <input id="submit" name="submit" type="submit" class="btn btn-default"> </input> </div>
+                                <input id="submit" name="submit" type="submit" class="btn btn-dark"> </input> </div>
                         </div>
                         <div class="form-group">
                             <div class="col-sm-10 col-md-10 col-lg-10 col-sm-offset-2">
@@ -273,7 +278,7 @@ if (!$errName && !$errComp && !$errEmail && !$errMessage && !$errHuman) {
     <!-- Footer -->
     <footer>
         <div class="container text-center">
-            <p> &copy; </p>
+            <p> &copy; 2017 Cascade Design LLC. </p>
         </div>
     </footer>
     <!-- jQuery -->
