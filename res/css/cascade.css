@@ -1,16 +1,38 @@
+/*cascade Design - CSS -- Written by: Ryan Harper ©Cascade Design 2017 */
+
+/*  Body  */ 
+
 body {
     width: 100%;
     height: 100%;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: white;
-    background-color: #2b303a;
+    background-color: #373f51;
     overflow-x: hidden;
+    webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
 }
 
 html {
     width: 100%;
     height: 100%;
 }
+
+footer {
+    padding: 50px 0;
+}
+
+img::selection {
+    background: transparent;
+}
+
+img::-moz-selection {
+    background: transparent;
+}
+
+
+
+
+/*  Text  */
 
 h1,
 h2,
@@ -20,8 +42,8 @@ h5,
 h6 {
     margin: 0 0 35px;
     text-transform: uppercase;
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 700;
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
     letter-spacing: 1px;
 }
 
@@ -32,17 +54,37 @@ p {
     font-weight: 300;
     font-kerning: normal;
 }
-
+.title {
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 2.0;
+    text-align: center;
+    margin-bottom: 3px;
+}
 .subheader {
     margin: 0 0 25px;
+    font-size: 25px;
+    line-height: 1.5;
+    font-weight: 200;
+
+    
+}
+
+.paragraph {
+        margin: 0 0 25px;
     font-size: 18px;
     line-height: 1.5;
-    font-weight: 600;
+    font-weight: 200;
+    text-align: center;
+    margin-top:  10px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 @media (min-width: 768px) {
     p {
         margin: 0 0 35px;
+        
         font-size: 20px;
         line-height: 1.6;
     }
@@ -62,8 +104,37 @@ a:focus {
 }
 
 .light {
+    font-weight: 200;
+}
+.med {
     font-weight: 400;
 }
+.bold {
+    font-weight: 700;
+}
+.color-dark {
+    color: #1b1b1e;
+}
+.color-light {
+    color: #d8dbe2;
+}
+footer p {
+    margin: 0;
+}
+
+::-moz-selection {
+    text-shadow: none;
+    background: #fcfcfc;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+::selection {
+    text-shadow: none;
+    background: #fcfcfc;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/*  Navigation  */
 
 .navbar-custom {
     margin-bottom: 0;
@@ -143,6 +214,8 @@ a:focus {
     }
 }
 
+/*  Jumbotron Header  */
+
 .intro {
     display: table;
     width: 100%;
@@ -150,7 +223,7 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: white;
-    background: url("/res/img/head5.jpg") no-repeat bottom center scroll;
+    background: url("/res/img/header.jpg") no-repeat bottom center scroll;
     background-color: #2B303A;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -184,45 +257,8 @@ a:focus {
     }
 }
 
-.btn-circle {
-    width: 70px;
-    height: 70px;
-    margin-top: 15px;
-    padding: 7px 16px;
-    border: 2px solid white;
-    border-radius: 100% !important;
-    font-size: 40px;
-    color: white;
-    background: transparent;
-    -webkit-transition: background 0.3s ease-in-out;
-    -moz-transition: background 0.3s ease-in-out;
-    transition: background 0.3s ease-in-out;
-}
 
-.btn-circle:hover,
-.btn-circle:focus {
-    outline: none;
-    color: white;
-    background: rgba(255, 255, 255, 0.1);
-}
-
-.btn-circle i.animated {
-    -webkit-transition-property: -webkit-transform;
-    -webkit-transition-duration: 1s;
-    -moz-transition-property: -moz-transform;
-    -moz-transition-duration: 1s;
-}
-
-.btn-circle:hover i.animated {
-    -webkit-animation-name: pulse;
-    -moz-animation-name: pulse;
-    -webkit-animation-duration: 1.5s;
-    -moz-animation-duration: 1.5s;
-    -webkit-animation-iteration-count: infinite;
-    -moz-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    -moz-animation-timing-function: linear;
-}
+/*  Buttons  */
 
 .btn {
     text-transform: uppercase;
@@ -248,105 +284,14 @@ a:focus {
     background-color: #fff;
 }
 
-@media (max-width: 1199px) {
-    ul.banner-social-buttons {
-        margin-top: 15px;
-    }
+button#submit {
+    padding-left: 5px;
+    padding-left: 5px;
 }
 
-@media (max-width: 767px) {
-    ul.banner-social-buttons li {
-        display: block;
-        margin-bottom: 20px;
-        padding: 0;
-    }
-    ul.banner-social-buttons li:last-child {
-        margin-bottom: 0;
-    }
-}
 
-footer {
-    padding: 50px 0;
-}
+/*  Contact Form  */
 
-footer p {
-    margin: 0;
-}
-
-::-moz-selection {
-    text-shadow: none;
-    background: #fcfcfc;
-    background: rgba(255, 255, 255, 0.2);
-}
-
-::selection {
-    text-shadow: none;
-    background: #fcfcfc;
-    background: rgba(255, 255, 255, 0.2);
-}
-
-img::selection {
-    background: transparent;
-}
-
-img::-moz-selection {
-    background: transparent;
-}
-
-body {
-    webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
-}
-
-.about {
-    height: 500px;
-    background-color: #2b303a;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    display: grid;
-}
-.philo {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 20px;
-    padding-right: 20px;
-    background-color: ;
-    display-grid: ;
-    height: auto;
-    
-}
-#particles-js {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: #2B303A;
-    background-image: url("");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
-}
-
-.canvas {
-    display: block;
-    vertical-align: bottom;
-}
-
-.align-left {
-    text-align: left;
-    align-content: left;
-    align-items: left;
-}
-
-.align-right {
-    text-align: right;
-    align-content: right;
-    align-items: right;
-}
-
-.fa-align-center {
-    text-align: center;
-    align-items: center;
-    position: center;
-}
 
 #contact {
     
@@ -403,10 +348,10 @@ body {
     border-color: #fff;
 }
 
-button#submit {
-    padding-left: 5px;
-    padding-left: 5px;
-}
+
+
+
+/*  Icons  */
 
 .icon-right {
     position: right;
@@ -415,19 +360,33 @@ button#submit {
 
 }
 
-.section-head {
-    font-size: 60px;
-    font-weight: 400;
-    padding-left: 50px;
+
+
+
+.about {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+
+
+
+
+
+
+.seperator {
+    width: 10%;
+    border-width: 1px;
+    border-color: #58A4B0;
+    margin-top: auto;
+    border-style: solid;
+    
+    
+    
+    
     
 }
-.section-text {
+.list-unstyled {
+    text-align: center;
+}
 
-}
-.blue-left {
-    width: .5%;
-    border-width: 50px;
-    border-color: #175676;
-    padding: 0px;
-    position: left;
-}
