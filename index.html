@@ -2,6 +2,24 @@
 <html lang="en">
 
 <head>
+    
+<link rel="apple-touch-icon" sizes="57x57" href="/res/img/fav/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/res/img/fav/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/res/img/fav/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/res/img/fav/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/res/img/fav/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/res/img/fav/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/res/img/fav/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/res/img/fav/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/res/img/fav/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/res/img/fav/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/res/img/fav/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/res/img/fav/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/res/img/fav/favicon-16x16.png">
+<link rel="manifest" href="/res/img/fav/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/res/img/fav/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,9 +41,9 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <!-- 
+
 <?php
-  $bg = array('/res/img/head1.png', '/res/img/head2.png', '/res/img/head3.png', '/res/img/head4.png');
+  $bg = array('/res/img/bg.jpg', '/res/img/bg1.jpg', '/res/img/bg2.jpg', '/res/img/bg3.jpg', '/res/img/bg4.jpg', '/res/img/bg5.jpg');
 
   $i = rand(0, count($bg)-1); // generate random number size of the array
   $selectedBg = "$bg[$i]"; // set variable equal to which random filename was chosen
@@ -40,7 +58,6 @@ background: url(images/<?php echo $selectedBg; ?>) no-repeat bottom center scrol
 }
 
 </style>
--->
     <!-- *** Contact ONLY Form -->
     
     <!--
@@ -272,6 +289,21 @@ if (!$errName && !$errComp && !$errEmail && !$errMessage && !$errHuman) {
 </div>
         </div>
     </section>
+        
+        <section id="social" class="social">
+            <div class="container">
+                <div class="row">
+                    <h1 class="title">Follow on social media</h1>
+                    <p class="subheader">Click the icons below and follow us on social media to see what's happening at Cascade Design.</p>
+                    <hr class="seperator">
+                    <br>
+                    <div class="social-link">
+                        <a class="fa fa-instagram fa-4x social-link" href="http://instagram.com/cascadebydesign" target="_blank"></a>
+                        <a class="fa fa-twitter fa-4x social-link" href="http://twitter.com/cascadebydesign" target="_blank"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
     <section id="contact" class="contact">
         <div class="container">
             <div class="row">
@@ -334,6 +366,8 @@ if (!$errName && !$errComp && !$errEmail && !$errMessage && !$errHuman) {
     <footer>
         <div class="container text-center">
             <p> &copy; 2017 Cascade Design LLC. </p>
+            <br> 
+            <p class="footer"><a class="nostyle" href="sitemap.html">Sitemap and Contributions</a></p>
         </div>
     </footer>
     
