@@ -81,6 +81,20 @@ p {
     text-align: center;
     margin-bottom: 3px;
 }
+@media (max-width: 769px) {
+    .title {
+        font-size: 30px;
+    }
+    .subheader {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 10px;
+    line-height: 1.5;
+    font-weight: 200;
+    text-align: center;
+        
+    }
+}
 .title-modal {
     font-size: 30px;
     font-weight: 400;
@@ -117,10 +131,9 @@ p {
     margin-right: 20%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
     p {
-        margin: 0 0 35px;
-        
+        margin: 0 0 25px;
         font-size: 20px;
         line-height: 1.6;
     }
@@ -136,7 +149,8 @@ a {
 a:hover,
 a:focus {
     text-decoration: none;
-    color: lightgray;
+    color: #214060;
+
 }
 
 .light {
@@ -190,14 +204,18 @@ footer p {
 }
 
 .navbar-custom .navbar-toggle {
-    color: white;
-    background-color: rgba(255, 255, 255, 0.2);
+    color: #000;
+    padding-left: 12px;
+    padding-right: 12px;
+    background-color: #fff;
     font-size: 12px;
+    border-radius: 0px;
 }
 
 .navbar-custom .navbar-toggle:focus,
 .navbar-custom .navbar-toggle:active {
     outline: none;
+    border-radius: 0px;
 }
 
 .navbar-custom .navbar-brand {
@@ -242,7 +260,7 @@ footer p {
     color: white;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
     .navbar-custom {
         padding: 20px 0;
         border-bottom: none;
@@ -254,7 +272,7 @@ footer p {
     }
     .navbar-custom.top-nav-collapse {
         padding: 0;
-        background: black;
+        background: #000;
         border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     }
 }
@@ -564,6 +582,13 @@ input:focus {
     padding-top: 100px;
     padding-bottom: 100px;
     text-align: center;
+}
+.contrib-text {
+    list-style: none;
+    color: #23262b;
+    text-align: center;
+    margin: auto;
+    display: block;
     font-size: 20px;
 }
 
@@ -600,4 +625,15 @@ a .btn-back {
 .social-link {
     padding-left: 10px;
     padding-right: 10px;
+}
+
+.page-fade {
+    color: #214060;
+}
+
+.page-fade:hover, 
+.page-fade:focus {
+    color: #fff;
+        
+        
 }
