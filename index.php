@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- Preloader -->
+<div id="preloader">
+    <div id="status">&nbsp;</div>
+</div>
 
 <head>
     <link rel="apple-touch-icon" sizes="57x57" href="/res/img/fav/apple-icon-57x57.png">
@@ -19,7 +23,6 @@
     <meta name="msapplication-TileColor" content="#23262b">
     <meta name="msapplication-TileImage" content="/res/img/fav/ms-icon-144x144.png">
     <meta name="theme-color" content="#23262b">
-    
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -32,7 +35,7 @@
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,400i,700" rel="stylesheet">
     <!-- CSS -->
-    <link href="res/css/cascade.css" rel="stylesheet">
+    <link href="res/css/cascade.min.css" rel="stylesheet">
     <!-- Animate.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -53,8 +56,7 @@
             }
         </style>
         <!-- *** Contact ONLY Form -->
-        <!--
-    <?php
+        <?php
 	if (isset($_POST["submit"])) {
 		$name = $_POST['name'];
 		$email = $_POST['email'];
@@ -95,58 +97,6 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
 }
 	}
 ?>
-        <!-- *** Design Inquiry Form -->
-        <!--
-        <?php
-	if (isset($_POST["submit"])) {
-		$name = $_POST['name'];
-        $company = $_POST['company'];
-		$email = $_POST['email'];
-		$message = $_POST['message'];
-		$human = intval($_POST['human']);
-		$from = 'Cascade Design Inquiry'; 
-		$to = 'info@cascadebydesign.com'; 
-		$subject = ' Cascade Design Inquiry Form ';
-
-		
-		$body = "From: $name\n E-Mail: $email\n Message:\n $message";
- 
-		// Check if name has been entered
-		if (!$_POST['name']) {
-			$errName = 'Please enter your name';
-		}
-
-        // Check if company name is entered
-        if (!$_POST['company']) {
-            $errComp = 'Please enter the name of your company/business';
-        }
-		
-		// Check if email has been entered and is valid
-		if (!$_POST['email'] || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
-			$errEmail = 'Please enter a valid email address';
-		}
-		
-		//Check if message has been entered
-		if (!$_POST['message']) {
-			$errMessage = 'Please enter your message';
-		}
-		//Check if simple anti-bot test is correct
-		if ($human !== 5) {
-			$errHuman = 'Your anti-spam is incorrect';
-		}
- 
-// If there are no errors, send the email
-if (!$errName && !$errComp && !$errEmail && !$errMessage && !$errHuman) {
-	if (mail ($to, $subject, $body, $from)) {
-		$result='<div class="alert alert-success">Thank You! I will be in touch</div>';
-	} else {
-		$result='<div class="alert alert-danger">Sorry there was an error sending your message. Please try again later</div>';
-	}
-}
-	}
-?>
-
--->
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -204,7 +154,7 @@ if (!$errName && !$errComp && !$errEmail && !$errMessage && !$errHuman) {
                 <ul class="list-unstyled">
                     <li>
                         <p class="subheader">- Plan -</p>
-                        <p class="paragraph">My planning process starts off with talking to my customer. A business plan is created and a contract signed prior to any work started.  The business plan helps define the guidelines for what elements need to be included in the design at hand. Based off of these guidelines, a set of wireframes will be assembled for each page of the site. Site wireframes are a set of plans that show a basic outline of the major components of a webpage. Included are elements such as images, text areas, buttons, etc. This set of plans allows me to show you what the site will look like before I actually start to design.</p>
+                        <p class="paragraph">My planning process starts off with talking to my customer. A business plan is created and a contract signed prior to any work started. The business plan helps define the guidelines for what elements need to be included in the design at hand. Based off of these guidelines, a set of wireframes will be assembled for each page of the site. Site wireframes are a set of plans that show a basic outline of the major components of a webpage. Included are elements such as images, text areas, buttons, etc. This set of plans allows me to show you what the site will look like before I actually start to design.</p>
                     </li>
                     <li>
                         <p class="subheader">- Design -</p>
@@ -220,10 +170,10 @@ if (!$errName && !$errComp && !$errEmail && !$errMessage && !$errHuman) {
                     </li>
                 </ul>
                 <br>
-                <br> 
+                <br>
                 <h1 class="title">Logo Design</h1>
                 <hr class="seperator">
-                        <p class="paragraph">Standalone logo and brand design is also a service offered here at Cascade Design. A logo is the quintessence of a proper business. When customers see a logo, they instantly think of the business associated. Logos are a bold statement of what you do and how you are associated. For more information about Cascade Design’s logo and brand design service, please contact me via the form at the bottom of this page. </p>
+                <p class="paragraph">Standalone logo and brand design is also a service offered here at Cascade Design. A logo is the quintessence of a proper business. When customers see a logo, they instantly think of the business associated. Logos are a bold statement of what you do and how you are associated. For more information about Cascade Design’s logo and brand design service, please contact me via the form at the bottom of this page. </p>
             </div>
         </div>
         </div>
@@ -278,7 +228,7 @@ if (!$errName && !$errComp && !$errEmail && !$errMessage && !$errHuman) {
                 <div class="social-link">
                     <a class="fa fa-instagram fa-4x social-link" href="http://instagram.com/cascadebydesign" target="_blank"></a>
                     <a class="fa fa-twitter fa-4x social-link" href="http://twitter.com/cascadebydesign" target="_blank"></a>
-                    <a class="fa fa-facebook-square fa-4x social-link" href="http://facebook.com/pages/cascadebydesign" target="_blank"></a>
+                    <a class="fa fa-facebook-square fa-4x social-link" href="http://facebook.com/cascadebydesign/" target="_blank"></a>
                 </div>
             </div>
         </div>
@@ -297,30 +247,30 @@ if (!$errName && !$errComp && !$errEmail && !$errMessage && !$errHuman) {
                             <label for="name" class="col-sm-2 col-md-12 col-lg-12 control-label-top color-dark">Name</label>
                             <div class="col-sm-10 col-md-8 col-md-offset-2">
                                 <input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" value="<?php echo htmlspecialchars($_POST['name']); ?>">
-                                <!--   <?php echo "<p class='text-danger'>$errName</p>";?> -->
+                                <?php echo "<p class='text-danger'>$errName</p>";?>
                             </div>
                         </div>
                         <div class="form-group pagination-centered">
                             <label for="email" class="col-sm-2 col-md-12 col-lg-12 control-label-top color-dark">Email</label>
                             <div class="col-sm-10 col-md-8 col-md-offset-2">
                                 <input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="<?php echo htmlspecialchars($_POST['email']); ?>">
-                                <!--   <?php echo "<p class='text-danger'>$errEmail</p>";?> -->
+                                <?php echo "<p class='text-danger'>$errEmail</p>";?>
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="message" class="col-sm-2 col-md-12 col-lg-12 control-label-top color-dark">Message</label>
                             <div class="col-sm-10 col-md-6 col-md-offset-3">
                                 <textarea class="form-control" rows="4" name="message">
-                                    <!--   <?php echo htmlspecialchars($_POST['message']);?> -->
+                                    <?php echo htmlspecialchars($_POST['message']);?>
                                 </textarea>
-                                <!--   <?php echo "<p class='text-danger'>$errMessage</p>";?> -->
+                                <?php echo "<p class='text-danger'>$errMessage</p>";?>
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="human" class="col-sm-2 col-md-12 control-label-top color-dark">2 + 3 = ?</label>
                             <div class="col-sm-10 col-md-4 col-md-offset-4">
                                 <input type="text" class="form-control" id="human" name="human" placeholder="Your Answer">
-                                <!--   <?php echo "<p class='text-danger'>$errHuman</p>";?> -->
+                                <?php echo "<p class='text-danger'>$errHuman</p>";?>
                             </div>
                         </div>
                         <div class="form-group">
@@ -330,7 +280,7 @@ if (!$errName && !$errComp && !$errEmail && !$errMessage && !$errHuman) {
                         </div>
                         <div class="form-group">
                             <div class="col-sm-10 col-md-10 col-lg-10 col-sm-offset-2">
-                                <!--    <?php echo $result; ?> -->
+                                <?php echo $result; ?>
                             </div>
                         </div>
                     </form>
@@ -380,8 +330,18 @@ if (!$errName && !$errComp && !$errEmail && !$errMessage && !$errHuman) {
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <!-- Theme JavaScript -->
     <script src="res/js/cascade.min.js"></script>
-    <!--particles-js-->
-    <script src="res/js/particles.js"></script>
+    <!-- Preloader -->
+    <script type="text/javascript">
+        //<![CDATA[
+        $(window).on('load', function () { // makes sure the whole site is loaded 
+                $('#status').fadeOut(); // will first fade out the loading animation 
+                $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+                $('body').delay(350).css({
+                    'overflow': 'visible'
+                });
+            })
+            //]]>
+    </script>
 </body>
 
 </html>
