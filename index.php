@@ -67,79 +67,76 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
 }
 	}
 ?>
-    <?php
+        <?php
   $bg = array('bg.jpg', 'bg1.jpg', 'bg2.jpg', 'bg3.jpg', 'bg4.jpg', 'bg5.jpg');
 
   $i = rand(0, count($bg)-1); // generate random number size of the array
   $selectedBg = "$bg[$i]"; // set variable equal to which random filename was chosen
 ?>
-        
-    <!-- Preloader -->
-<div id="preloader">
-    <div id="status">&nbsp;</div>
-</div>
-    <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,400i,700" rel="stylesheet">
-    <!-- CSS -->
-    <link href="res/css/cascade.min.css" rel="stylesheet">
-    <!-- Animate.css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
+            <!-- Preloader -->
+            <div id="preloader">
+                <div id="status">&nbsp;</div>
+            </div>
+            <!-- Bootstrap Core CSS -->
+            <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+            <!-- Custom Fonts -->
+            <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+            <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,400i,700" rel="stylesheet">
+            <!-- CSS -->
+            <link href="res/css/cascade.min.css" rel="stylesheet">
+            <!-- Animate.css -->
+            <link rel="stylesheet" href="res/css/animate.min.css">
+            <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+            <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+            <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    
-        
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-<style type="text/css">
-    .intro {
-        display: table;
-        width: 100%;
-        height: auto;
-        padding: 100px 0;
-        text-align: center;
-        color: white;
-        background: url("res/img/<?php echo $selectedBg; ?>") no-repeat bottom center scroll;
-        background-color: #23262b;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        background-size: cover;
-        -o-background-size: cover;
-    }
-    
-    .intro .intro-body {
-        display: table-cell;
-        vertical-align: middle;
-    }
-    
-    .intro .intro-body .brand-heading {
-        font-size: 40px;
-    }
-    
-    .intro .intro-body .intro-text {
-        font-size: 18px;
-    }
-    
-    @media (min-width: 768px) {
+    <style type="text/css">
         .intro {
-            height: 100%;
-            padding: 0;
+            display: table;
+            width: 100%;
+            height: auto;
+            padding: 100px 0;
+            text-align: center;
+            color: white;
+            background: url("res/img/<?php echo $selectedBg; ?>") no-repeat bottom center scroll;
+            background-color: #23262b;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            background-size: cover;
+            -o-background-size: cover;
         }
+        
+        .intro .intro-body {
+            display: table-cell;
+            vertical-align: middle;
+        }
+        
         .intro .intro-body .brand-heading {
-            font-size: 100px;
+            font-size: 40px;
         }
+        
         .intro .intro-body .intro-text {
-            font-size: 26px;
+            font-size: 18px;
         }
-    }
-</style>
+        
+        @media (min-width: 768px) {
+            .intro {
+                height: 100%;
+                padding: 0;
+            }
+            .intro .intro-body .brand-heading {
+                font-size: 100px;
+            }
+            .intro .intro-body .intro-text {
+                font-size: 26px;
+            }
+        }
+    </style>
     <!-- Navigation -->
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container">
@@ -282,7 +279,6 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
                     <p class="paragraph med color-dark">Please use the contact form below for general inquiries and to obtain a quote. If you are already a customer, contact Ryan directly.
                         <br> Thank you!</p>
                     <br>
-                    
                     <form class="form-horizontal" role="form" method="post" action="index.php">
                         <div class="form-group pagination-centered">
                             <label for="name" class="col-sm-2 col-md-12 col-lg-12 control-label-top color-dark">Name</label>
@@ -301,7 +297,8 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
                         <div class="form-group">
                             <label for="message" class="col-sm-2 col-md-12 col-lg-12 control-label-top color-dark">Message</label>
                             <div class="col-sm-10 col-md-6 col-md-offset-3">
-                                <textarea class="form-control" rows="5" name="message"><?php echo htmlspecialchars($_POST['message']);?>
+                                <textarea class="form-control" rows="5" name="message">
+                                    <?php echo htmlspecialchars($_POST['message']);?>
                                 </textarea>
                                 <?php echo "<p class='text-danger'>$errMessage</p>";?>
                             </div>
