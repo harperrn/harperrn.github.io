@@ -1,9 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- Preloader -->
-<div id="preloader">
-    <div id="status">&nbsp;</div>
-</div>
 
 <head>
     <link rel="apple-touch-icon" sizes="57x57" href="/res/img/fav/apple-icon-57x57.png">
@@ -29,6 +25,10 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Cascade Design - Clean and Simple Web Development</title>
+    <!-- Preloader -->
+<div id="preloader">
+    <div id="status">&nbsp;</div>
+</div>
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom Fonts -->
@@ -118,7 +118,7 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
                     <li> <a class="page-scroll" href="#designer">Meet the Designer</a> </li>
                     <li> <a class="page-scroll" href="#portfolio"> Portfolio</a> </li>
                     <li> <a class="page-scroll" href="#contact">Contact</a> </li>
-                    <li class="page-fade"> <a class="page-fade" href="login.php">Log In</a> </li>
+                    <li class="page-fade"> <a class="page-fade" href="http://client.cascadebydesign.com/">Log In</a> </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -260,8 +260,7 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
                         <div class="form-group">
                             <label for="message" class="col-sm-2 col-md-12 col-lg-12 control-label-top color-dark">Message</label>
                             <div class="col-sm-10 col-md-6 col-md-offset-3">
-                                <textarea class="form-control" rows="4" name="message">
-                                    <?php echo htmlspecialchars($_POST['message']);?>
+                                <textarea class="form-control" rows="4" placeholder="Type your message here..." name="message"> <?php echo htmlspecialchars($_POST['message']);?>
                                 </textarea>
                                 <?php echo "<p class='text-danger'>$errMessage</p>";?>
                             </div>
