@@ -1,0 +1,14 @@
+User-Agent: *
+Disallow: 
+Disallow: /sitemap.html
+Allow: /index.php
+Disallow: /vendor
+Disallow: /res
+Disallow: /less
+Disallow: /sass
+
+Sitemap: http://cascadebydesign.com/sitemap.xml
+
+#Begin Attracta SEO Tools Sitemap. Do not remove
+sitemap: http://cdn.attracta.com/sitemap/4994500.xml.gz
+#End Attracta SEO Tools Sitemap. Do not remove

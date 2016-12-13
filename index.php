@@ -95,47 +95,7 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-    <style type="text/css">
-        .intro {
-            display: table;
-            width: 100%;
-            height: auto;
-            padding: 100px 0;
-            text-align: center;
-            color: white;
-            background: url("res/img/<?php echo $selectedBg; ?>") no-repeat bottom center scroll;
-            background-color: #23262b;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            background-size: cover;
-            -o-background-size: cover;
-        }
-        
-        .intro .intro-body {
-            display: table-cell;
-            vertical-align: middle;
-        }
-        
-        .intro .intro-body .brand-heading {
-            font-size: 40px;
-        }
-        
-        .intro .intro-body .intro-text {
-            font-size: 18px;
-        }
-        
-        @media (min-width: 768px) {
-            .intro {
-                height: 100%;
-                padding: 0;
-            }
-            .intro .intro-body .brand-heading {
-                font-size: 100px;
-            }
-            .intro .intro-body .intro-text {
-                font-size: 26px;
-            }
-        }
+<style type="text/css">.intro{display:table;width:100%;height:auto;padding:100px 0;text-align:center;color:#fff;background:url('res/img/<?php echo $selectedBg; ?>') bottom center no-repeat #23262b;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover;-o-background-size:cover}.intro .intro-body{display:table-cell;vertical-align:middle}.intro .intro-body .brand-heading{font-size:40px}.intro .intro-body .intro-text{font-size:18px}@media (min-width:768px){.intro{height:100%;padding:0}.intro .intro-body .brand-heading{font-size:100px}.intro .intro-body .intro-text{font-size:26px}}
     </style>
     <!-- Navigation -->
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
