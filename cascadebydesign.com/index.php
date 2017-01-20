@@ -193,7 +193,10 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
                 <h1 class="title">Portfolio</h1>
                 <p class="subheader">Below is a showcase of our work. We are adding more frequently. </p>
                 <hr class="seperator">
-                <div class="center-wrapper"> <img type="button" height="100em" width="180em" src="res/img/assessment-logo.png" class="btn modal-btn" data-toggle="modal" data-target="#assessmentinspections"> </div>
+                <br>
+                <div class="center-wrapper"> <div class="col-md-4"> <img type="button" height="120em" width="230em" src="res/img/assessment-logo.png" class="btn modal-btn" data-toggle="modal" data-target="#assessmentinspections"></div>
+                    <div class="col-md-4"> <img type="button" height="120em" width="230em" src="res/img/tyrian-logo.svg" class="btn modal-btn" data-toggle="modal" data-target="#tyrian"></div>
+                    <div class="col-md-4"> <img type="button" height="120em" width="230em" src="res/img/mainstreet-logo.svg" class="btn modal-btn" data-toggle="modal" data-target="#mainstreet"></div> </div>
                 <!-- Modal -->
                 <div class="modal fade modal-portfolio" id="assessmentinspections" tabindex="-1" role="dialog" aria-labelledby="Assessment Inspections">
                     <div class="modal-dialog" role="document">
@@ -208,6 +211,44 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
                                     <input type="submit" class="btn btn-lg btn-light btn-center" value="View site" /> </form>
                                 <br>
                                 <p class="paragraph color-light">Assessment Inspections is a Bootstrap-based informational one page site outlining what the company does and prices listed. Project focused on overall asthetics and page design. Some aspects are redundant for customer ease of use. Working PHP contact form at the bottom of the page to contact the owner directly. </p>
+                                <br>
+                                <button type="button" class="btn btn-light btn-center" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade modal-portfolio" id="tyrian" tabindex="-1" role="dialog" aria-labelledby="Tyrian Photography">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="fa fa-chevron-down color-light" aria-hidden="true"></span></button>
+                                <br>
+                                <h1 class="title-modal color-light" id="myModalLabel">Tyrian Photography</h1>
+                                <p class="subheader med-size color-light">Photography e-commerce web store.</p>
+                                <hr class="seperator">
+                                <form action="https://tyrianphoto.com/" target="_blank">
+                                    <input type="submit" class="btn btn-lg btn-light btn-center" value="View site" /> </form>
+                                <br>
+                                <p class="paragraph color-light">Tyrian Photography is a Wordpress-based e-commerce site for the artist to sell artwork. It operates on a backend framework called WooCommerce, which allows tracking of order status and other helpful features.</p>
+                                <br>
+                                <button type="button" class="btn btn-light btn-center" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade modal-portfolio" id="mainstreet" tabindex="-1" role="dialog" aria-labelledby="Mainstreet Goods Company">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="fa fa-chevron-down color-light" aria-hidden="true"></span></button>
+                                <br>
+                                <h1 class="title-modal color-light" id="myModalLabel">Mainstreet Goods Company</h1>
+                                <p class="subheader med-size color-light">Shopify-based e-commerce apparel and accessory store.</p>
+                                <hr class="seperator">
+                                <form action="https://mainstreetgoodsco.com/" target="_blank">
+                                    <input type="submit" class="btn btn-lg btn-light btn-center" value="View site" /> </form>
+                                <br>
+                                <p class="paragraph color-light">We built the Mainstreet Goods site to be easily navagable with Shopify e-commerce. We chose to use this framework because it is easy to add large amounts of products, and it also integrates with Printful, a dropshipping platform which they use to produce their graphic products.</p>
                                 <br>
                                 <button type="button" class="btn btn-light btn-center" data-dismiss="modal">Close</button>
                             </div>
