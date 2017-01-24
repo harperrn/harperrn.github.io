@@ -1,0 +1,41 @@
+html{
+    font-family: 'Raleway', sans-serif;
+}
+.navtext {
+    font-size: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.icon-block {
+    padding: 0 15px;
+}
+
+.icon-block .material-icons {
+    font-size: inherit;
+}
+
+.hero {
+    background-size: cover;
+    position: center;
+    height: 110vh;
+    overflow: hidden;
+
+    
+}
+@media only screen and (min-width: 1200px) {
+    .hero {
+    background-image: url('/img/head.svg');
+    background-repeat: no-repeat;
+    padding: 50px;
+    }
+}
+.header{
+    padding-top: 15%;
+}
+.company-logo {
+    padding-top: 15px;
+}
+#news {
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
