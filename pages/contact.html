@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="apple-touch-icon" sizes="180x180" href="../fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="../fav/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../fav/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="../fav/manifest.json">
+    <link rel="mask-icon" href="../fav/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <title>Elevate - Home</title>
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700" rel="stylesheet">
+    <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection" /> </head>
+
+<body data-spy="scroll">
+    <div class="navbar-fixed">
+        <nav class="blue darken-4" role="navigation">
+            <div class="nav-wrapper container">
+                <a id="logo-container" href="../index.html" class="brand-logo center"><img src="../img/logo.svg" class="company-logo" height="50px" width="auto" /> </a>
+                <ul class="left hide-on-med-and-down">
+                    <li><a class="navtext" href="/pages/about.html">About</a></li>
+                    <li><a class="navtext" href="/pages/services.html">Services</a></li>
+                    <li><a class="navtext" href="/pages/consulting.html">Consulting</a></li>
+                </ul>
+                <ul class="right hide-on-med-and-down">
+                    <li><a class="navtext" href="/pages/portfolio.html">Client Portfolio</a></li>
+                    <li class="active"><a class="modal-trigger navtext" href="#contact">Contact</a></li>
+                    <li><a class="navtext" href="#">Log In</a></li>
+                </ul>
+                <ul id="nav-mobile" class="side-nav">
+                    <li><a href="/pages/about.html">About</a></li>
+                    <li><a href="/pages/services.html">Services</a></li>
+                    <li><a href="/pages/consulting.html">Consulting</a></li>
+                    <li><a href="/pages/portfolio.html">Client Portfolio</a></li>
+                    <li><a class="modal-trigger" href="#contact">Contact</a></li>
+                    <li><a href="#">Log In</a></li>
+                </ul> <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a> </div>
+        </nav>
+    </div>
+    
+    <div id="contact" class="modal bottom-sheet">
+    <div class="modal-content">
+      <h4>Contact Us</h4>
+      <p>Fill out the form below to contact us.</p>
+        <br>
+        <br>
+        <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="first_name" type="text" class="validate">
+          <label for="first_name">First Name</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="last_name" type="text" class="validate">
+          <label for="last_name">Last Name</label>
+        </div>
+      </div>
+        <div class="input-field col s12 m6">
+          <input placeholder="United States" id="country" type="text" class="validate">
+          <label for="disabled">Country</label>
+        </div>
+        <div class="input-field col s12 m6">
+    <select>
+      <option value="" disabled selected>Choose your option</option>
+      <option value="1">General Inquiry</option>
+      <option value="2">Question</option>
+      <option value="3">Comment</option>
+    </select>
+    <label>Subject</label>
+  </div>
+        <div class="input-field col s12 m6">
+          <input id="bname" type="text" class="validate">
+          <label for="bname">Business Name</label>
+        </div>
+      <div class="row">
+        <div class="input-field col s12 m6">
+          <input id="email" type="email" class="validate">
+          <label for="email">Email</label>
+        </div>
+        </div>
+        <br>
+      <div class="row">
+        <div class="input-field col s12">
+          <textarea id="message" class="materialize-textarea"></textarea>
+          <label for="message">Message</label>
+        </div>
+      </div>
+    </form>
+  </div>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Submit</a>
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="../js/materialize.js"></script>
+    <script src="../js/init.js"></script>
+    <script src="../js/hero.js"></script>
+    <script src="../js/jquery.easing.min.js"></script>
+</body>
+
+</html>

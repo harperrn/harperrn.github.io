@@ -39,3 +39,14 @@ html{
     padding-top: 20px;
     padding-bottom: 50px;
 }
+
+#stand {
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+@media only screen and (min-width: 1000px) {
+    #stand {
+    background-image: url('/img/build.svg');
+    background-repeat: no-repeat;
+    }
+}
