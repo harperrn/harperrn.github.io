@@ -18,7 +18,8 @@ html{
     background-size: cover;
     position: center;
     height: 110vh;
-    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: hidden;
 
     
 }

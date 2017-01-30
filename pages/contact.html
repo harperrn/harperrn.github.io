@@ -15,7 +15,9 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700" rel="stylesheet">
     <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
-    <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection" /> </head>
+    <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <script src="../js/contact_form.js"></script>
+    </head>
 
 <body data-spy="scroll">
     <div class="navbar-fixed">
@@ -37,20 +39,21 @@
                     <li><a href="/pages/services.html">Services</a></li>
                     <li><a href="/pages/consulting.html">Consulting</a></li>
                     <li><a href="/pages/portfolio.html">Client Portfolio</a></li>
-                    <li><a class="modal-trigger" href="#contact">Contact</a></li>
+                    <li class="active"><a href="/pages/contact.html">Contact</a></li>
                     <li><a href="#">Log In</a></li>
                 </ul> <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a> </div>
         </nav>
     </div>
     
-    <div id="contact" class="modal bottom-sheet">
-    <div class="modal-content">
+    <div id="contact">
+        <div class="container">
+        <div class="row">
       <h4>Contact Us</h4>
       <p>Fill out the form below to contact us.</p>
         <br>
         <br>
         <div class="row">
-    <form class="col s12">
+    <form id="contact" class="col s12">
       <div class="row">
         <div class="input-field col s6">
           <input id="first_name" type="text" class="validate">
@@ -66,7 +69,7 @@
           <label for="disabled">Country</label>
         </div>
         <div class="input-field col s12 m6">
-    <select>
+    <select id="reason">
       <option value="" disabled selected>Choose your option</option>
       <option value="1">General Inquiry</option>
       <option value="2">Question</option>
@@ -91,14 +94,17 @@
           <label for="message">Message</label>
         </div>
       </div>
+        <div class="col s12 m12">
+            <p class="center">
+                <input type="button" id="submit" value="Submit" class="center waves-effect waves-blue btn-large blue darken-4">
+            </p>
+        </div>
     </form>
   </div>
+            </div>
+        </div>
+      
     </div>
-    <div class="modal-footer">
-      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Submit</a>
-      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
-    </div>
-  </div>
     <!--  Scripts-->
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="../js/materialize.js"></script>
