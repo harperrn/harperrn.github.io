@@ -17,28 +17,32 @@ html{
 .hero {
     background-size: cover;
     position: center;
-    height: 110vh;
+    height: 100vh;
     overflow-y: hidden;
     overflow-x: hidden;
+    background-image: url('/img/head.gif');
 
     
 }
 @media only screen and (min-width: 1200px) {
     .hero {
-    background-image: url('/img/head.svg');
     background-repeat: no-repeat;
     padding: 50px;
     }
 }
 .header{
-    padding-top: 15%;
+    padding-top: 5%;
 }
 .company-logo {
-    padding-top: 15px;
+    padding-top: 10px;
 }
 #news {
     padding-top: 20px;
     padding-bottom: 50px;
+}
+#contact {
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 #stand {
@@ -51,3 +55,4 @@ html{
     background-repeat: no-repeat;
     }
 }
+
