@@ -3,4 +3,4 @@ $(document).ready(function () {
     $('#fullpage').fullpage({
         anchors: ['home', 'about', 'portfolio', 'services', 'contact']
     });
-})
+});

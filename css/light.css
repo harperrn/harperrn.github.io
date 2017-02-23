@@ -73,6 +73,10 @@ input {
     color: #fff;
 }
 
+.materialize-textarea {
+    color: #fff;
+}
+
 
 /* label focus color */
 
@@ -87,6 +91,7 @@ input {
     border-bottom: 1px solid #fff;
     box-shadow: 0 1px 0 0 #fff;
 }
+
 .input-field textarea[type=text]:focus + label {
     color: #fff;
 }
