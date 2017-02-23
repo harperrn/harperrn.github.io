@@ -2,8 +2,12 @@
 
 html {
     font-family: 'Raleway', Arial, Helvetica sans-serif;
-    background-image: url(img/bg.png);
 }
+
+body {
+    background-image: url(bg.png);
+}
+
 .padding-left {
     padding-left: 30px;
 }
@@ -12,24 +16,85 @@ html {
     padding-right: 30px;
 }
 
-
 .jumbo {
     font-size: 150px;
     font-weight: 200;
 }
+
 .arrows {
     font-size: 50px;
     border: 2px white solid;
     border-radius: 50px;
     padding: 10px;
 }
+
 .computer {
     font-size: 200px;
 }
+
+.fill-color {
+    padding-top: 30%;
+}
+
 .portfolio-btn {
     width: 75%;
     height: 75%;
     border: none;
     padding: 10px;
-    
+    margin-top: 50px;
+}
+
+nav ul {
+    transform: translateX(36%);
+    webkit-transform: translateX(-36%);
+}
+
+.noshadow {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.border {
+    border: .5px white solid;
+    width: 20%;
+    padding-top: 20px;
+}
+
+.top-pad {
+    padding-top: 20px;
+}
+
+.input {
+    cursor: white;
+}
+
+input {
+    color: #fff;
+}
+
+
+/* label focus color */
+
+.input-field input[type=text]:focus + label {
+    color: #fff;
+}
+
+
+/* label underline focus color */
+
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid #fff;
+    box-shadow: 0 1px 0 0 #fff;
+}
+.input-field textarea[type=text]:focus + label {
+    color: #fff;
+}
+
+
+/* label underline focus color */
+
+.input-field textarea[type=text]:focus {
+    border-bottom: 1px solid #fff;
+    box-shadow: 0 1px 0 0 #fff;
 }
