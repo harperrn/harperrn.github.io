@@ -1,10 +1,6 @@
-(function ($) {
-    $(function () {
-        $('.button-collapse').sideNav();
-        $('.collapsible').collapsible();
-        $('.modal').modal();
-        Materialize.updateTextFields();
-        $('select').material_select();
-        $("#fadein").addClass("load");
-    }); // end of document ready
-})(jQuery); // end of jQuery name space
+$(document).ready(function () {
+    $(".button-collapse").sideNav();
+    $('#fullpage').fullpage({
+        anchors: ['home', 'about', 'portfolio', 'contact']
+    });
+})

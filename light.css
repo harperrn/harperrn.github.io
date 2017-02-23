@@ -1,0 +1,35 @@
+/** Light.css - Produced by Cascade Design using Materialize **/
+
+html {
+    font-family: 'Raleway', Arial, Helvetica sans-serif;
+    background-image: url(img/bg.png);
+}
+.padding-left {
+    padding-left: 30px;
+}
+
+.padding-right {
+    padding-right: 30px;
+}
+
+
+.jumbo {
+    font-size: 150px;
+    font-weight: 200;
+}
+.arrows {
+    font-size: 50px;
+    border: 2px white solid;
+    border-radius: 50px;
+    padding: 10px;
+}
+.computer {
+    font-size: 200px;
+}
+.portfolio-btn {
+    width: 75%;
+    height: 75%;
+    border: none;
+    padding: 10px;
+    
+}

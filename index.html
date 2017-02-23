@@ -1,68 +1,275 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <link rel="apple-touch-icon" sizes="180x180" href="fav/apple-touch-icon.png?v=GvJdPRq2oz">
-    <link rel="icon" type="image/png" href="fav/favicon-32x32.png?v=GvJdPRq2oz" sizes="32x32">
-    <link rel="icon" type="image/png" href="fav/favicon-16x16.png?v=GvJdPRq2oz" sizes="16x16">
-    <link rel="manifest" href="fav/manifest.json?v=GvJdPRq2oz">
-    <link rel="mask-icon" href="fav/safari-pinned-tab.svg?v=GvJdPRq2oz" color="#5bbad5">
-    <link rel="shortcut icon" href="fav/favicon.ico?v=GvJdPRq2oz">
-    <meta name="msapplication-TileColor" content="#2d89ef">
-    <meta name="msapplication-TileImage" content="fav/mstile-144x144.png?v=GvJdPRq2oz">
-    <meta name="theme-color" content="#ffffff">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
-    <title>Cascade - Home</title>
-    <!-- CSS  -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700" rel="stylesheet">
-    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
-    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" /> </head>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,400,700" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link rel="stylesheet" type="text/css" href="light.css" />
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/css/jquery.fullPage.css" /> </head>
 
-<body class="animated fadeIn" data-spy="scroll">
-    <nav class="blue darken-4" role="navigation">
-        <div class="nav-wrapper container">
-            <a id="logo-container" href="#" class="brand-logo center"><img src="img/cascade.svg" class="company-logo" height="50px" width="auto" /> </a>
-            <ul class="left hide-on-med-and-down">
-                <li><a class="navtext" href="/pages/about.html">About</a></li>
-                <li><a class="navtext" href="/pages/services.html">Services</a></li>
-                <li><a class="navtext" href="/pages/consulting.html">Consulting</a></li>
-            </ul>
-            <ul class="right hide-on-med-and-down">
-                <li><a class="navtext" href="/pages/portfolio.html">Client Portfolio</a></li>
-                <li><a class="navtext" href="/pages/contact.html">Contact</a></li>
-                <li><a class="navtext" href="#">Log In</a></li>
-            </ul>
-            <ul id="nav-mobile" class="side-nav">
-                <li><a href="/pages/about.html">About</a></li>
-                <li><a href="/pages/services.html">Services</a></li>
-                <li><a href="/pages/consulting.html">Consulting</a></li>
-                <li><a href="/pages/portfolio.html">Client Portfolio</a></li>
-                <li><a href="/pages/contact.html">Contact</a></li>
-                <li><a href="#">Log In</a></li>
-            </ul> <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a> </div>
-    </nav>
-    <div class="blue darken-4 hero section no-pad-bot" id="index-banner">
-        <div class="container">
-            <br>
-            <br>
-            <h1 class="header center white-text"><b>CASCADE</b><br><br> Professional Services</h1>
-            <div class="row center">
-                <h5 class="header white-text col s12 light">Make the most of your business with elegant startup and term services.</h5> </div>
-            <div class="row center">
-                <br>
-                <br>
-                <br> <a href="/pages/about.html" class="page-scroll btn-large waves-effect white-text waves-light blue accent-2">Take a Look</a> </div>
-            <br>
-            <br> </div>
-    </div>
-    <!--  Scripts-->
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="js/materialize.js"></script>
-    <script src="js/init.js"></script>
-    <script src="js/hero.js"></script>
-    <script src="js/jquery.easing.min.js"></script>
+<body>
+    <header>
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper  center white"> <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="black-text material-icons">menu</i></a>
+                    <ul class=" hide-on-med-and-down">
+                        <li><a class="padding-left padding-right black-text" href="#about">About</a></li>
+                        <li><a class="padding-left padding-right black-text" href="#portfolio">Portfolio</a></li>
+                        <li><a class="padding-left padding-right black-text" href="#services">Services</a></li>
+                        <li><a class="padding-left padding-right black-text" href="#contact">Contact</a></li>
+                    </ul>
+                    <ul class="side-nav" id="mobile-demo">
+                        <li><a class="black-text" href="#about">About</a></li>
+                        <li><a class="black-text" href="#portfolio">Portfolio</a></li>
+                        <li><a class="black-text" href="#services">Services</a></li>
+                        <li><a class="black-text" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section id="welcome" class="welcome">
+        <div id="fullpage">
+            <div class="section home" data-anchor="home">
+                <div class="container">
+                    <div class="row">
+                        <p class="center"><img class="responsive-img center" src="/img/logo.svg" height="25%" width="25%" /></p>
+                        <h1 class="white-text jumbo center">Devza</h1>
+                        <h5 class="subheader center light white-text">Minimalistic design studio focusing on new-age design</h5>
+                        <br>
+                        <br>
+                        <br>
+                        <h2 class="center"><a href="#about"><i class="material-icons white-text arrows">keyboard_arrow_down</i></a></h2>
+            </div>
+        </div>
+        </div>
+            
+        <div class="section about" data-anchor="about">
+            <div class="slide">
+            <div class="container">
+                <div class="row">
+                        <div class="col s12 m7">
+                        <h2 class="white-text light">Simple, Minimalistic Design</h2>
+                        <p class="white-text light">Our designs focus on a simple principle; great design comes with simplicity. This means that our designers do our best to mate simple design with purposeful layouts. Speaking of layouts, ours are intuitive and easy to use. Customers will have the ability to navigate your website with prescision and stamina; something not all web designers can promise. </p>
+                        <br>
+                        <br>
+                        <h3 class="white-text light">Job Done. Period.</h3>
+                        <p class="white-text light">No more waiting around for your designer to communicate back to you about your porject. We take pride in our fast communication and turn-over times regarding modifications and questions. If there is a problem, we will fix it. This philosophy also carries over to your customers. Faster load times due to more intuitive code structures indicate quality for your brand and company as a whole.</p>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="col s12 m5">
+                        <p class="center"><i class="material-icons white-text computer">desktop_windows</i></p>
+                    </div>
+                    
+                </div>
+                <div class="row">
+                <h2 class="center"><a href="#portfolio"><i class="material-icons white-text arrows">keyboard_arrow_down</i></a></h2>
+                </div>
+            </div>
+            </div>
+            <div class="slide">
+            <div class="container">
+                <div class="row">
+                    <h2 class="white-text light">Our Minimal Design Process</h2>
+                    <p class="white-text light">Our process allows a nailed-down design to be created faster. We stick to a strict schedule to get your prject completed on time. Check in on us every step of the way with our intuitive client portal. </p>
+                    <h4 class="white-text light">Consult</h4>
+                    <p class="white-text light">We woork with you to decide what your needs and wants are, and how we can meet them. Taking notes and sketches allows us to save every intricut detail for planning.</p>
+                    <h4 class="white-text light">Plan</h4>
+                    <p class="white-text light">A skeletal structure of your site is built during the planning phase.</p>
+                    <h4 class="white-text light">Build</h4>
+                    <p class="white-text light">This is when all of your ideas come to life. Based on the plans, a rough draft of a design is put together. This includes colors, layouts, and later the bulk of the content. </p>
+                    <h4 class="white-text light">Revise</h4>
+                    <p class="white-text light">Taking it back to the drawing board, we refine your design to your exact specifications. Content, images, and colors can be changed to achieve the final desired effect. </p>
+                </div>
+            </div>
+        </div>
+        </div>
+            <div class="section" data-anchor="portfolio">
+                <div class="slide hide-on-med-and-down">
+                <div class="container">
+                    <div class="row">
+                        <h1 class="white-text light">Our Work</h1>
+                        <h5 class="white-text light">Click the links below to view some of our most recent projects.</h5>
+                        <br><br><br>
+                    </div>
+                    <div class="row center">
+                        <div class="col s6 m4 l4">
+                            <div class="portfolio-item">
+                            
+                                <a class="center portfolio-btn transparent waves-effect waves-light" href="#portfolio/1"> <img src="/img/mainstreet.svg"> </a>
+                            </div>
+                        </div>
+                        <div class="col s6 m4 l4">
+                            <div class="portfolio-item">
+                            
+                                <a class="center portfolio-btn transparent waves-effect waves-light" href="#portfolio/2"> <img src="/img/cascade.svg"> </a>
+                            </div>
+                        </div>
+                        <div class="col s6 m4 l4">
+                            <div class="portfolio-item">
+                            
+                                <a class="center portfolio-btn transparent waves-effect waves-light" href="#portfolio/3"> <img src="/img/cascade.svg"> </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row center">
+                    <div class="col s6 m4 l4">
+                            <div class="portfolio-item">
+                            
+                                <a class="center portfolio-btn transparent waves-effect waves-light" href="#portfolio/4"> <img src="/img/mainstreet.svg"> </a>
+                            </div>
+                        </div>
+                        <div class="col s6 m4 l4">
+                            <div class="portfolio-item">
+                            
+                                <a class="center portfolio-btn transparent waves-effect waves-light" href="#portfolio/5"> <img src="/img/mainstreet.svg"> </a>
+                            </div>
+                        </div>
+                        <div class="col s6 m4 l4">
+                            <div class="portfolio-item">
+                            
+                                <a class="center portfolio-btn transparent waves-effect waves-light" href="#portfolio/6"> <img src="/img/mainstreet.svg"> </a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col s12 m7">
+                            <h2 class="white-text light">Mainstreet Goods Company</h2>
+                            <h5 class="white-text light">Logo • Web Design • Brand Design • Advertisement Design</h5>
+                            <p class="white-text light">We designed Mainstreet Goods as an entire brand. We started from the ground up, working an overall aesthetic that matches the intentions of this company. The clients decided that they wanted to use Shopify to manage their store's content. We added custom elements to allow the site to run more smoothly and suit our clients needs. We also configured the account from the ground up to be ready to open upon request. </p>
+                        </div>
+                            <div class="col s12 m5">
+                                <p class="center"><img src="/img/mainstreet.svg" height="50%" width="50%"/></p>
+                            </div>
+                        </div>
+                            <br><br>
+                            <div class="row">
+                                <div class="col s6 m6">
+                        <h2 class="center"><a href="#portfolio/"><i class="waves-effect waves-light material-icons white-text arrows">first_page</i></a></h2>
+                            <p class="center white-text light">BACK</p>
+                                </div>
+                                <div class="col s6 m6">
+                                    <h2 class="center"><a href="https://mainstreetgoodsco.com/" target="_blank"><i class="waves-effect waves-light material-icons white-text arrows">fullscreen</i></a></h2>
+                            <p class="center white-text light">OPEN</p>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                    <div class="container">
+                        <div class="row">
+                            <h2 class="white-text light">Cascade Design</h2>
+                            <br><br>
+                         <br><br>
+                            <div class="row">
+                                <div class="col s6 m6">
+                        <h2 class="center"><a href="#portfolio/"><i class="waves-effect waves-light material-icons white-text arrows">first_page</i></a></h2>
+                            <p class="center white-text light">BACK</p>
+                                </div>
+                                <div class="col s6 m6">
+                                    <h2 class="center"><a href="http://cascadebydesign.com/" target="_blank"><i class="waves-effect waves-light material-icons white-text arrows">fullscreen</i></a></h2>
+                            <p class="center white-text light">OPEN</p>
+                                </div>
+                        </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                    <div class="slide">
+                    <div class="container">
+                        <div class="row">
+                            <h2 class="white-text light">Assessment Inspections</h2>
+                            <br><br>
+                         <br><br>
+                            <div class="row">
+                                <div class="col s6 m6">
+                        <h2 class="center"><a href="#portfolio/"><i class="waves-effect waves-light material-icons white-text arrows">first_page</i></a></h2>
+                            <p class="center white-text light">BACK</p>
+                                </div>
+                                <div class="col s6 m6">
+                                    <h2 class="center"><a href="http://assessmentinspections.org/" target="_blank"><i class="waves-effect waves-light material-icons white-text arrows">fullscreen</i></a></h2>
+                            <p class="center white-text light">OPEN</p>
+                                </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                    <div class="slide">
+                    <div class="container">
+                        <div class="row">
+                            <h2 class="white-text light">Tyrian Photography</h2>
+                            <br><br>
+                         <br><br>
+                            <div class="row">
+                                <div class="col s6 m6">
+                        <h2 class="center"><a href="#portfolio/"><i class="waves-effect waves-light material-icons white-text arrows">first_page</i></a></h2>
+                            <p class="center white-text light">BACK</p>
+                                </div>
+                                <div class="col s6 m6">
+                                    <h2 class="center"><a href="https://mainstreetgoodsco.com/" target="_blank"><i class="waves-effect waves-light material-icons white-text arrows">fullscreen</i></a></h2>
+                            <p class="center white-text light">OPEN</p>
+                                </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                    <div class="slide">
+                    <div class="container">
+                        <div class="row">
+                            <h2 class="white-text light">Assessment Inspections</h2>
+                            <br><br>
+                         <br><br>
+                            <div class="row">
+                                <div class="col s6 m6">
+                        <h2 class="center"><a href="#portfolio/"><i class="waves-effect waves-light material-icons white-text arrows">first_page</i></a></h2>
+                            <p class="center white-text light">BACK</p>
+                                </div>
+                                <div class="col s6 m6">
+                                    <h2 class="center"><a href="https://mainstreetgoodsco.com/" target="_blank"><i class="waves-effect waves-light material-icons white-text arrows">fullscreen</i></a></h2>
+                            <p class="center white-text light">OPEN</p>
+                                </div>
+                        </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <!--<a href="#" onclick="changeCSS('positive.css', 0);">STYLE 1</a> <a href="#" onclick="changeCSS('negative.css', 0);">STYLE 2</a>--></body>
+
+</html>
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script type="text/javascript" src="js/init.js"></script>
+<script src="/js/jquery.easings.min.js"></script>
+<!-- This following line is only necessary in the case of using the plugin option `scrollOverflow:true` -->
+<script type="text/javascript" src="/js/scrolloverflow.min.js"></script>
+<script type="text/javascript" src="/js/jquery.fullPage.js"></script>
+<!--Color Change JS -->
+<!--<script>
+    function changeCSS(cssFile, cssLinkIndex) {
+        var oldlink = document.getElementsByTagName("/css/light.css").item(cssLinkIndex);
+        var newlink = document.createElement("/css/dark.css");
+        newlink.setAttribute("rel", "stylesheet");
+        newlink.setAttribute("type", "text/css");
+        newlink.setAttribute("href", cssFile);
+        document.getElementsByTagName("head").item(0).replaceChild(newlink, oldlink);
+    }
+</script>-->
 </body>
 
 </html>
